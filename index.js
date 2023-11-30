@@ -15,6 +15,10 @@ mongoose.connect('mongodb+srv://verificacfdi:i5YJgDpCQU5HAVIS@cluster0.fttxxbj.m
 
 app.use('/api/books', bookRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Endpoint  🐥👻')
+})
+
 app.listen(port, () => {
   console.log(`Servidor escuchando en el puerto ${port}`);
 });
