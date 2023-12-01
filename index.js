@@ -11,7 +11,7 @@ const port = 3001;
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: 'https://verificacfdi-admin.vercel.app/',
+  origin: '*',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true, // Habilita el intercambio de cookies entre dominios
